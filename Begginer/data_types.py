@@ -15,3 +15,14 @@ my_tuple = (1, 2, 3)
 my_set = {1, 2, 3}
 # 8. Dictionary
 my_dict = {'key': 'value'}
+
+
+# Print Statements
+print(my_string)
+print(my_integer)
+print(my_float)
+print(my_boolean)
+print(my_list)
+print(my_tuple)
+print(my_set)
+print(my_dict)
