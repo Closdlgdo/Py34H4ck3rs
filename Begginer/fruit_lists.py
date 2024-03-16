@@ -1,4 +1,7 @@
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+#
+# for fruit in fruits:
+#     print(fruit)
 
-for fruit in fruits:
+for fruit in range(1, 10):
     print(fruit)
