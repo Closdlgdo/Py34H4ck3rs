@@ -3,5 +3,6 @@
 # for fruit in fruits:
 #     print(fruit)
 
-for fruit in range(1, 10):
+# Find all number divisible by 3 from 0 to 100
+for fruit in range(0, 100, 3):
     print(fruit)
