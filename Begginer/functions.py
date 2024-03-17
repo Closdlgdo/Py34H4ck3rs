@@ -6,4 +6,7 @@
 # oct(), open(), ord(), pow(), print(), property(), range(), repr(),reversed(), round(), set(), setattr(), slice(), sorted(),
 # staticmethod(), str(), sum(), super(), tuple(), type(), vars(), zip(), and len().
 def my_function():
-    pass
+    print("Hello, World!")
+
+
+my_function()
