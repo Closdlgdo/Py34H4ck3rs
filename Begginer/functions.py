@@ -5,3 +5,5 @@
 # int(), isinstance(), issubclass(), iter(), len(), list(), locals(),map(), max(), memoryview(), min(), next(), object(),
 # oct(), open(), ord(), pow(), print(), property(), range(), repr(),reversed(), round(), set(), setattr(), slice(), sorted(),
 # staticmethod(), str(), sum(), super(), tuple(), type(), vars(), zip(), and len().
+def my_function():
+    pass
