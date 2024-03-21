@@ -4,12 +4,17 @@
 import time
 
 
-def my_function(name):
+name = input("What is your name? ")
+
+
+def my_function():
     print(f"Hello, {name}")
 
 
 print("Program starting...")
-time.sleep(3)
+time.sleep(1)
+
 print("Almost there...")
-time.sleep(5)
-my_function("Carlos")
+time.sleep(3)
+
+my_function()
