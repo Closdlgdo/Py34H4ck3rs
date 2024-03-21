@@ -4,7 +4,7 @@
 # If a number is divisible by both 3 and 5, print "FizzBuzz".\
 # Functions do not need to be in order when the print shows. The important part is
 # when the function is called.
-
+import time
 choice = int(input("Enter a number: "))
 
 
@@ -20,4 +20,6 @@ def my_function():
             print(i)
 
 
+print("Program starting...")
+time.sleep(3)
 my_function()
