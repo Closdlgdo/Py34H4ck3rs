@@ -9,7 +9,7 @@ choice = int(input("Enter a number: "))
 
 
 def my_function():
-    for i in range(1, choice):
+    for i in range(1, choice, 3):
         if i % 3 == 0 and i % 5 == 0:
             print("FizzBuzz")
         elif i % 3 == 0:
