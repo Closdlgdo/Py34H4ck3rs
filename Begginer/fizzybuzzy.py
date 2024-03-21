@@ -5,8 +5,11 @@
 # Functions do not need to be in order when the print shows. The important part is
 # when the function is called.
 
+choice = int(input("Enter a number: "))
+
+
 def my_function():
-    for i in range(1, 101):
+    for i in range(1, choice):
         if i % 3 == 0 and i % 5 == 0:
             print("FizzBuzz")
         elif i % 3 == 0:
