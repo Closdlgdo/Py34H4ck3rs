@@ -17,4 +17,7 @@ time.sleep(1)
 print("Almost there...")
 time.sleep(3)
 
+print("Still not there...")
+time.sleep(5)
+
 my_function()
