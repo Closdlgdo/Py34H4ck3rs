@@ -1,16 +1,20 @@
 import random
-# Create a greeting
+
 print("""Welcome to Hangman!""")
-# create your own word list
+
 wordList = ["hacker", "python", "computer", "science", "random"]
-# randomly choose a word from the list you have created
+# create an empty list
+# for each letter in the chosenWord add a "_" that will be printed to the console
+# example: if the word is hacker: ["_","_","_","_","_","_"]
+emptyList = []
+
 chosenWord = random.choice(wordList)
-# ask the user to guess a letter
+
 guess = input("Guess a letter: ").lower()
-# bonus make the program take the input from the user and make it lowercase
-guess = guess.lower()
-# Check if the letter is in the word
-if guess in chosenWord:
-    print("Correct!")
-else:
-    print("Wrong!")
+
+
+for letter in chosenWord:
+    if letter == guess:
+        print("Correct")
+    else:
+        print("Wrong")
