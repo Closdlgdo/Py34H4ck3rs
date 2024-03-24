@@ -12,7 +12,8 @@ emptyList = []
 
 for letter in chosenWord:
     emptyList.append("_")
-    print(emptyList)
+
+print(emptyList)
 
 guess = input("Guess a letter: ").lower()
 # Loop through each of the letters in the chosen word
