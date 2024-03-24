@@ -6,9 +6,13 @@ wordList = ["hacker", "python", "computer", "science", "random"]
 # create an empty list
 # for each letter in the chosenWord add a "_" that will be printed to the console
 # example: if the word is hacker: ["_","_","_","_","_","_"]
-emptyList = []
 
 chosenWord = random.choice(wordList)
+emptyList = []
+
+for letter in chosenWord:
+    emptyList.append("_")
+    print(emptyList)
 
 guess = input("Guess a letter: ").lower()
 # Loop through each of the letters in the chosen word
