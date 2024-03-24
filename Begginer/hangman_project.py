@@ -20,8 +20,8 @@ guess = input("Guess a letter: ").lower()
 # if the letter is in the word, replace the "_" with the letter
 # Example: if the chosen word is hacker, and the user guessed "h", the list will be ["h","_","_","_","_","_"]
 
-for letter in chosenWord:
+for position in range(len(chosenWord)):
+    letter = chosenWord[position]
     if letter == guess:
-        print("Correct")
-    else:
-        print("Wrong")
+        emptyList[position] = letter
+print(emptyList)
