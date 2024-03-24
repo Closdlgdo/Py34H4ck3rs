@@ -11,7 +11,9 @@ emptyList = []
 chosenWord = random.choice(wordList)
 
 guess = input("Guess a letter: ").lower()
-
+# Loop through each of the letters in the chosen word
+# if the letter is in the word, replace the "_" with the letter
+# Example: if the chosen word is hacker, and the user guessed "h", the list will be ["h","_","_","_","_","_"]
 
 for letter in chosenWord:
     if letter == guess:
