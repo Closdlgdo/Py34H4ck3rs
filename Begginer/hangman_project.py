@@ -3,9 +3,6 @@ import random
 print("""Welcome to Hangman!""")
 
 wordList = ["hacker", "python", "computer", "science", "random"]
-# create an empty list
-# for each letter in the chosenWord add a "_" that will be printed to the console
-# example: if the word is hacker: ["_","_","_","_","_","_"]
 
 chosenWord = random.choice(wordList)
 emptyList = []
@@ -16,12 +13,22 @@ for letter in chosenWord:
 print(emptyList)
 
 guess = input("Guess a letter: ").lower()
-# Loop through each of the letters in the chosen word
-# if the letter is in the word, replace the "_" with the letter
-# Example: if the chosen word is hacker, and the user guessed "h", the list will be ["h","_","_","_","_","_"]
 
-for position in range(len(chosenWord)):
-    letter = chosenWord[position]
-    if letter == guess:
-        emptyList[position] = letter
-print(emptyList)
+# 1 use a while loop so your game keeps going until the word has been guessed
+while "_" in emptyList:
+
+    for position in range(len(chosenWord)):
+        letter = chosenWord[position]
+        if letter == guess:
+            emptyList[position] = letter
+    print(emptyList)
+
+    if guess not in chosenWord:
+        print(f"You guessed {guess}, that's not in the word. You lose a life.")
+        break
+
+    guess = input("Guess a letter: ").lower()
+
+
+if "_" not in emptyList:
+    print("You win!")
