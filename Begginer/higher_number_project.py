@@ -1,4 +1,4 @@
-# We will create a small project that will receive two input ints, then it will output the
+# We will create a small.txt project that will receive two input ints, then it will output the
 # highest of those two numbers.
 
 print("Enter the first number")
